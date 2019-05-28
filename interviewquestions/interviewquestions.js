@@ -2,7 +2,7 @@
 //  partitions from the partition set parts using Dynamic Programming
 function partition(n, parts) {
   // Structure to hold recursive data
-  data = [];
+  let data = [];
 
   // Loop through all of the parts available to partition n
   for (let part = 0; part < parts.length + 1; ++part) {
@@ -91,7 +91,7 @@ partition(500, [1, 2, 5, 10, 20, 50, 100, 200]);
 
 // Evaluation dictionary holding number evaluated to
 //  and the number of times it was evaluated to
-evaluate_to = {};
+let evaluate_to = {};
 
 // Fill in the dictionary
 recurse(['1'], evaluate_to);
